@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #f4f4f4; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.container {
+    background-color: #212a31;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; 
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02); 
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #9a9999; 
+}
+
+.exchange {
+    margin-bottom: 20px;
+}
+
+.exchange div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #9a9999; 
+}
+
+select, input, button {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: border-color 0.2s; 
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+}
+
+select:focus, input:focus {
+    border-color: #4CAF50; 
+    outline: none; 
+}
+
+button {
+    background-color: #748d92; 
+    border: 2px solid #748d92;
+    color: white;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.2s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #4c6c72;
+    transform: translateY(-2px); 
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #bcc4cd; 
+}
+
+@media (min-width:1024px) {
+    .container{
+        margin-top: 80px;
+    }
+}
