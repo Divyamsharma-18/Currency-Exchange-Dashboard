@@ -1,2 +1,2 @@
 # Currency-Exchange-Dashboard
-Made using HTML, CSS and JS.
+Made using HTML, CSS and JS and API.
