@@ -98,4 +98,4 @@ Thanks for exploring.
 Here’s to conversions that are quick, UI that is elegant, and projects that feel both useful *and* beautiful. 🤍🌿
 
 ---
-<img width="1919" height="1078" alt="Image" src="https://github.com/user-attachments/assets/eca162f6-bb2c-4743-89e2-f9fb013c6c8e" />
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/d30477a9-fce8-41fc-a5b8-7c2670eb3856" />

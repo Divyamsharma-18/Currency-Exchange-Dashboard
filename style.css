@@ -1,12 +1,12 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    height: fit-content;
+    height: 100vh;
+    margin: 0;
     background-color: #f4f4f4; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-
 .container {
     background-color: #212a31;
     padding: 30px;
@@ -16,29 +16,23 @@ body {
     max-width: 400px; 
     transition: transform 0.2s;
 }
-
 .container:hover {
     transform: scale(1.02); 
 }
-
 h1 {
     margin-bottom: 20px;
-    color: #9a9999; 
+    color: #bfbfbf; 
 }
-
 .exchange {
     margin-bottom: 20px;
 }
-
 .exchange div {
     margin-bottom: 15px;
 }
-
 label {
     font-weight: bold;
     color: #9a9999; 
 }
-
 select, input, button {
     width: 100%; 
     padding: 10px;
@@ -47,14 +41,15 @@ select, input, button {
     font-size: 16px; 
     transition: border-color 0.2s; 
     box-sizing: border-box; 
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
 }
-
+input, select{
+    margin-top: 5px;
+}
 select:focus, input:focus {
     border-color: #4CAF50; 
     outline: none; 
 }
-
 button {
     background-color: #748d92; 
     border: 2px solid #748d92;
@@ -63,20 +58,36 @@ button {
     margin-top: 12px;
     transition: background-color 0.2s, transform 0.2s; 
 }
-
 button:hover {
     background-color: #4c6c72;
     transform: translateY(-2px); 
 }
-
+.placeholder{
+    font-style: italic;
+}
 .result {
     margin-top: 20px;
     font-size: 1.4em;
     color: #bcc4cd; 
 }
-
-@media (min-width:1024px) {
+#swap-icon {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+#swap-icon.flipping {
+    transform: rotateY(180deg);
+}
+@media (max-width: 450px) {
+    body {
+        background-color: #212a31;
+    }
+    h1{
+        font-size: 27px;
+    }
     .container{
-        margin-top: 80px;
+        box-shadow: none;
+    }
+    .result{
+        font-size: 20px;
     }
 }

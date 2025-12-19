@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💵</text></svg>">
     <title>Currency Exchange Dashboard</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://currencyconverterforus.netlify.app/" />
+    <meta property="og:title" content="Currency Exchange Dashboard — Real-Time Exchange Rates & Smart Conversions" />
+    <meta property="og:description"
+        content="Convert currencies instantly using real-time exchange rates. Simple, fast, and accurate currency conversion with a clean, responsive UI." />
+    <meta property="og:image" content="https://currencyconverterforus.netlify.app/og.png" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="570" />
+    <meta property="og:site_name" content="Currency Exchange Dashboard" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://currencyconverterforus.netlify.app/" />
+    <meta name="twitter:title" content="Currency Exchange Dashboard — Real-Time Exchange Rates & Smart Conversions" />
+    <meta name="twitter:description"
+        content="Instant currency conversion with live exchange rates. Built for speed, accuracy, and a seamless user experience." />
+    <meta name="twitter:image" content="https://currencyconverterforus.netlify.app/og.png" />
 </head>
+
 <body>
     <div class="container">
         <h1>Currency Exchange Dashboard</h1>
@@ -22,10 +45,12 @@
                 <label for="amount">Amount:</label>
                 <input type="number" id="amount" value="1">
             </div>
-            <button id="convert-btn">Convert</button>
+            <button id="swap-btn">
+                <span id="swap-icon">⇄</span>
+            </button>
         </div>
         <div class="result">
-            <p id="result-text"></p>
+            <p id="result-text" class="placeholder"></p>
         </div>
     </div>
     <script src="script.js"></script>
